@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sky {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(359deg, #32a0d9, #041a25);
+    background-size: 400% 400%;
+    animation: skyanimation 5s ease 1;
+}
+
+@keyframes skyanimation {
+    0% {
+        background-position: 47% 0%
+    }
+    50% {
+        background-position: 54% 100%
+    }
+    100% {
+        background-position: 47% 0%
+    }
+}
+
+.sun {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #F9BF3B;
+    animation-name: sunmove;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+}
+
+@keyframes sunmove {
+    0% {
+        transform: rotate(0deg) translateX(-500px) translateY(-80px) rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg) translateX(-350px) translateY(-80px) rotate(-90deg);
+    }
+    50% {
+        transform: rotate(180deg) translateX(-300px) translateY(-80px) rotate(-180deg);
+    }
+    75% {
+        transform: rotate(270deg) translateX(0px) translateY(0px) rotate(-270deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(0px) translateY(0px) rotate(-360deg);
+    }
+}
+
+.moon {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #ECF0F1;
+    animation-name: moonmove;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    position: absolute;
+    z-index: 1;
+    left: 150px;
+    top: 100px;
+}
+
+@keyframes moonmove {
+    0% {
+        transform: translate(0px, 300px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.ground {
+    width: 100%;
+    height: 400px;
+    background-color: #019875;
+    position: absolute;
+    z-index: 2;
+}
+
+.canopy {
+    background: #26A65B;
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    border-style: solid;
+    border-width: 2px;
+    margin: auto;
+}
+
+.trunk {
+    background: #800000;
+    width: 35px;
+    height: 100px;
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.tree1, .tree2, .tree3, .tree4, .tree5 {
+    width: 90%;
+    height: auto;
+    position: absolute;
+}
+
+.tree1 {
+    top: -120px;
+    left: -550px;
+    z-index: 1;
+}
+
+.tree2 {
+    top: 10px;
+    left: -250px;
+    z-index: 3;
+}
+
+.tree3 {
+    top: -120px;
+    left: 0px;
+    z-index: 1;
+}
+
+.tree4 {
+    top: 10px;
+    left: 250px;
+    z-index: 3;
+}
+
+.tree5 {
+    top: -120px;
+    left: 550px;
+    z-index: 1;
+}
+
+.zombie1, .zombie2, .zombie3, .zombie4 {
+    position: absolute;
+    width: 200px;
+    height: 312px;
+    background-image: url("images/walkingdead_coderslab.png");
+    background-repeat: no-repeat;
+    zoom: 0.5;
+    animation: zombie_move 10s 6s linear infinite, zombie_walk 500ms steps(10) infinite;
+}
+
+.zombie1 {
+    top: 0px;
+    right: -200px;
+    z-index: 2;
+}
+
+.zombie2 {
+    top: -80px;
+    right: -550px;
+    z-index: 0;
+}
+
+.zombie3 {
+    top: 150px;
+    right: -750px;
+    z-index: 2;
+}
+
+.zombie4 {
+    top: 300px;
+    right: -350px;
+    z-index: 4;
+}
+
+@keyframes zombie_walk {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2000px 0;
+    }
+}
+
+@keyframes zombie_move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-4000px, 0px);
+    }
+}
