@@ -13,7 +13,7 @@ body {
 
 .sky {
     width: 100%;
-    height: 400px;
+    height: 50vh;
     background: linear-gradient(359deg, #32a0d9, #041a25);
     background-size: 400% 400%;
     animation: skyanimation 5s ease 1;
@@ -42,8 +42,8 @@ body {
     animation-timing-function: linear;
     position: absolute;
     z-index: 1;
-    left: 50%;
-    top: 50%;
+    left: 80vh;
+    top: 50vh;
 }
 
 @keyframes sunmove {
@@ -77,13 +77,13 @@ body {
     animation-fill-mode: backwards;
     position: absolute;
     z-index: 1;
-    left: 150px;
-    top: 100px;
+    left: 20vh;
+    top: 20vh;
 }
 
 @keyframes moonmove {
     0% {
-        transform: translate(0px, 300px);
+        transform: translate(0px, 400px);
     }
     100% {
         transform: translate(0px, 0px);
@@ -92,7 +92,7 @@ body {
 
 .ground {
     width: 100%;
-    height: 400px;
+    height: 50vh;
     background-color: #019875;
     position: absolute;
     z-index: 2;
@@ -198,9 +198,9 @@ body {
 
 @keyframes zombie_move {
     0% {
-        transform: translate(0px, 0px);
+        transform: translate(0vh, 0px);
     }
     100% {
-        transform: translate(-4000px, 0px);
+        transform: translate(-500vh, 0px);
     }
 }
