@@ -159,7 +159,7 @@ body {
     background-image: url("images/walkingdead_coderslab.png");
     background-repeat: no-repeat;
     zoom: 50%;
-    animation: zombie_move 6s linear infinite, zombie_walk 500ms steps(10) infinite;
+    animation: zombie_move 10s 6s linear infinite, zombie_walk 500ms steps(10) infinite;
 }
 
 .zombie1 {
