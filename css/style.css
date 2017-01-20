@@ -14,9 +14,9 @@ body {
 .sky {
     width: 100%;
     height: 50vh;
-    background: linear-gradient(359deg, #32a0d9, #041a25);
+    background: linear-gradient(360deg, #32a0d9,#32a0d9, #df990b,#041a25, #041a25);
     background-size: 400% 400%;
-    animation: skyanimation 5s ease 1;
+    animation: skyanimation 6s ease 1;
 }
 
 @keyframes skyanimation {
@@ -42,19 +42,19 @@ body {
     animation-timing-function: linear;
     position: absolute;
     z-index: 1;
-    left: 50vh;
+    left: 50%;
     top: 50vh;
 }
 
 @keyframes sunmove {
     0% {
-        transform: rotate(0deg) translateX(-500px) translateY(-80px) rotate(0deg);
+        transform: rotate(0deg) translateX(-500px) translateY(0px) rotate(0deg);
     }
     25% {
-        transform: rotate(90deg) translateX(-350px) translateY(-80px) rotate(-90deg);
+        transform: rotate(90deg) translateX(-400px) translateY(0px) rotate(-90deg);
     }
     50% {
-        transform: rotate(180deg) translateX(-300px) translateY(-80px) rotate(-180deg);
+        transform: rotate(180deg) translateX(-400px) translateY(0px) rotate(-180deg);
     }
     75% {
         transform: rotate(270deg) translateX(0px) translateY(0px) rotate(-270deg);
@@ -77,13 +77,13 @@ body {
     animation-fill-mode: backwards;
     position: absolute;
     z-index: 1;
-    left: 20vh;
-    top: 30vh;
+    left: 20%;
+    top: 10vh;
 }
 
 @keyframes moonmove {
     0% {
-        transform: translate(0px, 500px);
+        transform: translate(0px, 60vh);
     }
     100% {
         transform: translate(0px, 0px);
