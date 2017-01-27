@@ -158,39 +158,37 @@ body {
     height: 312px;
     background-image: url("images/walkingdead_coderslab.png");
     background-repeat: no-repeat;
-    zoom: 0.5;
-    -moz-transform:scale(0.5);
-    -moz-transform-origin: 0 0;
     animation: zombie_move 10s 6s linear infinite, zombie_walk 500ms steps(10) infinite;
 }
 
 .zombie1 {
-    top: -2%;
-    right: -7%;
+    top: -10%;
+    right: -15%;
     z-index: 2;
 }
 
 .zombie2 {
-    top: -20%;
-    right: -17%;
+    top: -40%;
+    right: -24%;
     z-index: 0;
 }
 
 .zombie3 {
-    top: 20%;
-    right: -25%;
+    top: 4%;
+    right: -33%;
     z-index: 2;
 }
 
 .zombie4 {
-    top: 52%;
-    right: -13%;
+    top: 38%;
+    right: -21%;
     z-index: 4;
 }
 
 @keyframes zombie_walk {
     0% {
         background-position: 0 0;
+
     }
     100% {
         background-position: -2000px 0;
@@ -199,9 +197,9 @@ body {
 
 @keyframes zombie_move {
     0% {
-        transform: translate(0vh, 0px);
+        transform: translate(0vh, 0px) scale(0.5);
     }
     100% {
-        transform: translate(-600vh, 0px);
+        transform: translate(-600vh, 0px)scale(0.5);;
     }
 }
