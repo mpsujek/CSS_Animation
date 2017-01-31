@@ -191,7 +191,7 @@ body {
     }
     @keyframes zombie_move {
         0% {
-            transform: translate(30vw, 0px) scale(0.25);
+            transform: translate(50vw, 0px) scale(0.25);
         }
         100% {
             transform: translate(-250vw, 0px)scale(0.25);
