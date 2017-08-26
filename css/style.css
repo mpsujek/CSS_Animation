@@ -121,7 +121,7 @@ body {
     position: absolute;
     width: 200px;
     height: 312px;
-    background-image: url("images/walkingdead_coderslab.png");
+    background-image: url("../images/walkingdead_coderslab.png");
     background-repeat: no-repeat;
     animation: zombie_move 13s 6s linear infinite, zombie_walk 500ms steps(10) infinite;
 }
